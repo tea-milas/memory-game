@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background-color: #f5f5dc;
+}
+header h1 {
+  position: relative;
+  z-index: 5;
+  margin-top: 30vh;
+  text-align: center;
+  font-size: 76px;
+  color: #61894E;
+}
+header #newGame {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  margin: 10vh 40%;
+  padding: 10px 25px;
+  width: 20%;
+  background-color: #61894E;
+  border: 1px solid #61894E;
+  border-radius: 5px;
+}
+header #newGame a {
+  color: #f5f5dc;
+  font-size: 30px;
+  text-decoration: none;
+}
+header #newGame:active {
+  transform: scale(0.9);
+  background-color: #EB6424;
+}
+header #leafy_bcg {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -10%;
+  right: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  header #newGame {
+    width: 40%;
+    margin: 12vh 30%;
+  }
+  header #leafy_bcg {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: -10%;
+    right: 0;
+  }
+}
+#game_section {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  background-color: #f5f5dc;
+}
+
+#title {
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  width: 30%;
+  text-align: center;
+}
+#title h2 {
+  padding: 10px;
+  color: #296643;
+  font-size: 40px;
+}
+#title #scores {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#title #scores h5 {
+  text-align: left;
+  color: #EB6424;
+  font-size: 15px;
+}
+
+#countdown {
+  height: 42px;
+  width: 42px;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+  background-color: #EB6424;
+  border: 2px solid #EB6424;
+  border-radius: 50%;
+}
+#countdown #countdown_time {
+  margin-top: 10px;
+  font-size: large;
+  font-weight: bold;
+  color: seashell;
+}
+
+#bcg_leaves {
+  z-index: 1;
+  height: 300px;
+  width: auto;
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  transform: rotate(40deg);
+}
+
+#bcg_leaves2 {
+  z-index: 1;
+  height: 400px;
+  width: auto;
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  transform: rotate(40deg);
+}
+
+@media only screen and (max-width: 1025px) {
+  #title {
+    width: 40%;
+  }
+  #title h2 {
+    padding-top: 30px;
+  }
+}
+#cards {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card {
+  margin: 10px 3px;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border: 1px solid seashell;
+  background-color: seashell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px #F4D06F;
+  border-radius: 5px;
+}
+.card img {
+  margin: auto;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.card:active {
+  transform: rotateY(180deg);
+  transform: scale(0.9);
+}
+
+.back-side {
+  background-image: linear-gradient(to right, #F4D06F, #EB6424);
+  border: 1px solid #EB6424;
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 1025px) {
+  #cards {
+    margin: 40px 11%;
+    grid-gap: 6px;
+  }
+  #cards .card {
+    margin: 10px 3px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  #cards .card img {
+    margin: auto;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+.message {
+  position: absolute;
+  z-index: 3;
+  top: 30vh;
+  left: 25%;
+  width: 50%;
+  height: 40vh;
+  background-color: #296643;
+  border: 2px solid #296643;
+}
+.message h2 {
+  width: 100%;
+  color: seashell;
+  margin: 45px auto;
+  text-align: center;
+}
+.message p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: seashell;
+}
+.message .btn {
+  margin: 30px 35%;
+  padding: 8px 25px;
+  width: 30%;
+  font-size: 15px;
+  color: #296643;
+  background-color: #f5f5dc;
+  border: 1px solid #f5f5dc;
+}
+.message .btn:active {
+  transform: scale(0.9);
+}

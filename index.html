@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" async defer></script>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <title>Leafy Memory Game</title>
+</head>
+
+<body>
+    <header id="landing"> 
+        <h1>Leafy Memory Game</h1>
+        <button id="newGame"  onClick="startGame()">
+            <a class="btn_text" href="#game_section">Start a new game</a>
+        </button>
+        <img src="./assets/img/leafy_bcg.png" id="leafy_bcg">
+    </header>
+
+
+    <main id="game_section" class="hidden">
+        <section id="title">
+            <h2>Match the leaves</h2>
+            <section id="scores">
+                <h5>Moves : <span id="moves">0</span></h5> 
+                <h5>Score : <span id="score">0</span></h5> 
+            </section>
+            
+        </section>
+
+        <section id="countdown">
+            <p id="countdown_time"></p>
+        </section>
+
+        <section id="cards">
+            
+        </section>
+
+        <img src="./assets/img/l1.png" id="bcg_leaves">
+        <img src="./assets/img/l2.png" id="bcg_leaves2">
+
+    </main>
+
+    <section id="message-win" class="message hidden">
+        <h2>Congrats!!!!</h2>
+        <p>You finished the game in <span id="totalMoves"> </span> moves before the time ran out</p>
+        </br>
+        <button id="playAgain" class="btn" onclick="replay()">
+            <a class="btn_text">Play Again</a>
+        </button>
+    </section>
+    <section id="message-lose" class="message hidden">
+        <h2>You've lost!!</h2>
+        <p>Better luck next time!!</p>
+        </br>
+        <button id="playAgain" class="btn" onclick="replay()">
+            <a class="btn_text">Play Again</a>
+        </button>
+    </section>
+    
+</body>
+</html>

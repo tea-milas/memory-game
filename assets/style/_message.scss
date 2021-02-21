@@ -1,0 +1,43 @@
+@import './_variables.scss';
+
+.message {
+    position: absolute;
+    z-index: 3;
+    top: 30vh;
+    left: 25%;
+    width: 50%;
+    height: 40vh;
+    
+    background-color: $cadmium-green;
+    border: 2px solid $cadmium-green;
+
+    h2 {
+        width: 100%;
+        color: $offWhite;
+        margin: 45px auto;
+        text-align: center;
+    }
+    p {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        color: $offWhite;
+    }
+
+    .btn {
+        margin: 30px 35%;
+        padding: 8px 25px;
+        width: 30%;
+        font-size: 15px;
+        color: $cadmium-green;
+        background-color: $beige;
+        border: 1px solid $beige;
+    }
+    
+    .btn:active {
+        transform: scale(.9);
+    }
+}
+
+
+

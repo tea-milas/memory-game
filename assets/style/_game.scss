@@ -1,0 +1,86 @@
+@import './_variables.scss';
+
+
+#game_section {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background-color: $beige;
+}
+
+#title {
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+
+    h2 {
+        padding: 10px;
+        color: $cadmium-green;
+        font-size: 40px;
+    }
+    #scores {
+        
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h5 {
+            text-align: left;
+            color: #EB6424;
+            font-size: 15px;
+        }
+    }
+    
+}
+
+
+
+#countdown {
+    height: 42px;
+    width: 42px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    background-color: #EB6424;
+    border: 2px solid #EB6424;
+    border-radius: 50%;
+
+    #countdown_time {
+        margin-top: 10px;
+        font-size: large;
+        font-weight: bold;
+        color: $offWhite;
+    }
+}
+
+#bcg_leaves {
+    z-index: 1;
+    height: 300px;
+    width: auto;
+    position: absolute;
+    top: -8%;
+    left: -8%;
+    transform: rotate(40deg);
+}
+
+#bcg_leaves2 {
+    z-index: 1;
+    height: 400px;
+    width: auto;
+    position: absolute;
+    bottom: -20%;
+    right: 0;
+    transform: rotate(40deg);
+}
+
+@media only screen and (max-width: 1025px) {
+    #title {
+        width: 40%;
+    
+        h2 {
+            padding-top: 30px;
+        }
+    }
+}
