@@ -22,13 +22,13 @@
 
 
     <main id="game_section" class="hidden">
+
         <section id="title">
             <h2>Match the leaves</h2>
             <section id="scores">
                 <h5>Moves : <span id="moves">0</span></h5> 
                 <h5>Score : <span id="score">0</span></h5> 
             </section>
-            
         </section>
 
         <section id="countdown">
@@ -45,20 +45,31 @@
     </main>
 
     <section id="message-win" class="message hidden">
-        <h2>Congrats!!!!</h2>
-        <p>You finished the game in <span id="totalMoves"> </span> moves before the time ran out</p>
+        <h2>🎉🎉🎉Congrats!!🎉🎉🎉</h2>
+        <p>You finished the game in <span id="totalMoves"> </span> moves before the time ran out!</p>
         </br>
-        <button id="playAgain" class="btn" onclick="replay()">
-            <a class="btn_text">Play Again</a>
-        </button>
+        <section class="buttons">
+            <button id="playAgain" class="btn" onclick="replay()">
+                <a class="btn_text">Play Again</a>
+            </button>
+            <button class="btn toStart" onclick="toStart()">
+                <a class="btn_text"  href="#landing">Go to the start screen</a>
+            </button>
+        </section>
     </section>
+
     <section id="message-lose" class="message hidden">
         <h2>You've lost!!</h2>
         <p>Better luck next time!!</p>
         </br>
-        <button id="playAgain" class="btn" onclick="replay()">
-            <a class="btn_text">Play Again</a>
-        </button>
+        <section class="buttons">
+            <button id="playAgain" class="btn" onclick="replay()">
+                <a class="btn_text">Play Again</a>
+            </button>
+            <button class="btn toStart" onclick="toStart()">
+                <a class="btn_text"  href="#landing">Go to the start screen</a>
+            </button>
+        </section>
     </section>
     
 </body>

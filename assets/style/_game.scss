@@ -18,17 +18,16 @@
     h2 {
         padding: 10px;
         color: $cadmium-green;
-        font-size: 40px;
+        font-size: $font-M;
     }
     #scores {
-        
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         h5 {
             text-align: left;
-            color: #EB6424;
+            color: $orange;
             font-size: 15px;
         }
     }
@@ -43,8 +42,8 @@
     padding: 10px;
     text-align: center;
     margin: auto;
-    background-color: #EB6424;
-    border: 2px solid #EB6424;
+    background-color: $orange;
+    border: 2px solid $orange;
     border-radius: 50%;
 
     #countdown_time {
@@ -82,5 +81,45 @@
         h2 {
             padding-top: 30px;
         }
+    }
+}
+
+@media only screen and (max-width: 813px) {
+    #title {
+        h2 {
+            padding: 5px;
+            font-size: 25px;
+        }
+        #scores {
+            margin-top: 6px;
+            h5 {
+                font-size: 10px;
+            }
+        }
+        
+    }
+    #countdown {
+        height: 15px;
+        width: 15px;
+        padding: 8px;
+    
+        #countdown_time {
+            margin-top: 3px;
+            font-size: 7px;
+        }
+    }
+
+    #bcg_leaves {
+        height: 150px;
+        width: auto;
+        top: -8%;
+        left: -8%;
+    }
+    
+    #bcg_leaves2 {
+        height: 150px;
+        bottom: -15%;
+        right: 0;
+        transform: rotate(40deg);
     }
 }

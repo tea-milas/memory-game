@@ -13,11 +13,12 @@ header {
         z-index: 5;
         margin-top: 30vh;
         text-align: center;
-        font-size: 76px;
+        font-size: $font-L;
         color: $green-title;
     }
     
     #newGame {
+        cursor: pointer;
         text-align: center;
         position: relative;
         z-index: 5;
@@ -30,14 +31,14 @@ header {
        
         a {
             color: $beige;
-            font-size: 30px;
+            font-size: $font-S;
             text-decoration: none;
         }
     }
     
     #newGame:active {
         transform: scale(.9);
-        background-color: #EB6424;
+        background-color: $orange;
         
     }
 
@@ -68,4 +69,21 @@ header {
             right: 0;
         }
     }
+}
+
+@media only screen and (max-width: 813px) {
+    header {
+        h1 {
+            font-size: $font-M;
+        }
+        #newGame {
+            width: 40%;
+            margin: 10vh 30%;
+            
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
 }

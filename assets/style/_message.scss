@@ -24,20 +24,52 @@
         color: $offWhite;
     }
 
-    .btn {
-        margin: 30px 35%;
-        padding: 8px 25px;
-        width: 30%;
-        font-size: 15px;
-        color: $cadmium-green;
-        background-color: $beige;
-        border: 1px solid $beige;
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        .btn {
+            cursor: pointer;
+            margin: 30px auto;
+            padding: 8px 25px;
+            width: 35%;
+            font-size: 15px;
+            
+            background-color: $beige;
+            border: 1px solid $beige;
+        }
+        
+        .btn:active {
+            transform: scale(.9);
+        }
+
+        a {
+            color: $cadmium-green;
+            text-decoration: none;
+        }
     }
-    
-    .btn:active {
-        transform: scale(.9);
-    }
+   
 }
 
 
+@media only screen and (max-width: 813px) {
+    .message {
+        h2 {
+            font-size: 15px;
+            margin: 20px auto;
+        }
+        p {
+            font-size: 10px;
+        }
+        .buttons {
+            .btn {
+                margin: 10px auto;
+                padding: 5px 20px;
+                width: 40%;
+                font-size: 8px;
+            }
+        }
+    }
 
+}
