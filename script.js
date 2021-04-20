@@ -76,6 +76,7 @@ const startGame = () => {
 //-----------------------------------COUNTDOWN------------------------------------------------------------
 const startCountdown = (duration, display) => {
     let timer = duration, minutes, seconds;
+    console.log("timer: ",timer)
 
     intervalID = setInterval(() => {
         minutes = parseInt(timer / 60);
@@ -91,7 +92,6 @@ const startCountdown = (duration, display) => {
             showLoseMsg();
             clearInterval(intervalID);
         } 
-
     },1000);
 }
 //-------------------------------------STOP COUNTDOWN-----------------------------------------------------
@@ -100,7 +100,6 @@ const stopCountdown = () => {
     clearInterval(intervalID);
 }
 //--------------------------------------SHUFFLE ARRAY------------------------------------------------------
-
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
